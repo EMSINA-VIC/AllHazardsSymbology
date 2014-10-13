@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2989" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64px" width="64px" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata2994">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1">
+  <g id="layer3" fill="#FFF" transform="translate(-42.182153,12.915504)">
+   <path id="path3829" d="m103,19.1a28.2,28.8,45.4,0,1,-57,0,28.2,28.8,45.4,1,1,57,0z" stroke-dashoffset="0" stroke="#f00000" stroke-miterlimit="4" stroke-dasharray="10.01177121, 5.00588561" stroke-width="5.0058856" fill="#FFF"/>
+  </g>
+ </g>
+ <g id="layer2">
+  <path id="path2394-7" fill="#F00" d="m17.2,46.5-1.49-1.52,6.3-6.31c3.47-3.47,6.3-6.47,6.3-6.65,0-0.185-2.66-2.99-5.91-6.23s-6.06-6.15-6.23-6.47c-0.251-0.452-0.0504-0.882,0.902-1.94,0.6-0.8,1.4-1.4,1.7-1.4,0.304,0,3.28,2.73,6.6,6.06,3.33,3.33,6.28,6.06,6.56,6.06,0.282,0,3.23-2.73,6.56-6.06,3.3-3.4,6.2-6.1,6.5-6.1,0.564,0,3.02,2.34,3.02,2.88,0,0.179-2.8,3.13-6.23,6.55-3.42,3.42-6.23,6.38-6.23,6.56,0,0.185,2.84,3.18,6.3,6.65l6.3,6.31-1.49,1.52c-0.8,0.9-1.6,1.6-1.8,1.6s-3.2-2.8-6.7-6.3l-6.33-6.31-6.31,6.31c-3.5,3.5-6.5,6.3-6.7,6.3s-1-0.7-1.8-1.5z"/>
+ </g>
+</svg>

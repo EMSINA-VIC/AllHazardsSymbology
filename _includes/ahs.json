@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Circle stroked",
+        "tags": [
+            "circle",
+            "disc",
+            "shape",
+            "shapes",
+            "geometric",
+            "stroke",
+            "round"
+        ],
+        "icon": "circle-stroked"
+    },
+    {
+        "name": "Circle solid",
+        "tags": [
+            "circle",
+            "shape",
+            "shapes",
+            "geometric",
+            "round"
+        ],
+        "icon": "circle"
+    },
+    {
+        "name": "Square stroked",
+        "tags": [
+            "box",
+            "square",
+            "shapes",
+            "shape",
+            "geometric",
+            "stroke"
+        ],
+        "icon": "square-stroked"
+    },
+    {
+        "name": "Square solid",
+        "tags": [
+            "box",
+            "square",
+            "shape",
+            "shapes",
+            "geometric"
+        ],
+        "icon": "square"
+    },
+    {
+        "name": "Triangle stroked",
+        "tags": [
+            "triangle",
+            "shape",
+            "shapes",
+            "geometric",
+            "stroke"
+        ],
+        "icon": "triangle-stroked"
+    }
+]

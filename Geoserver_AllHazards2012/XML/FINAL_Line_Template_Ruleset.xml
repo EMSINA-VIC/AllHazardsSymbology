@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" 
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+    xmlns="http://www.opengis.net/sld" 
+    xmlns:ogc="http://www.opengis.net/ogc" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+    <Name>Attribute-based line</Name>
+    <UserStyle>
+      <Title>GeoServer SLD Cook Book: Attribute-based line</Title>
+      <FeatureTypeStyle>
+    <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Edge Predicted</Title>
+        <ogc:Filter>
+        <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Edge_Predicted</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FF0000</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>
+              <CssParameter name="dasharray">10 6</CssParameter>   
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+    <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Edge Active</Title>
+        <ogc:Filter>
+        <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Edge_Active</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        </ogc:Filter>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FF0000</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>
+              <CssParameter name="dasharray">3 3</CssParameter>   
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+    <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Edge Contained</Title>
+        <ogc:Filter>
+        <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Edge_Contained</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        </ogc:Filter>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FF0000</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>    
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+    <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Control Line Completed</Title>
+        <ogc:Filter>
+        <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Control_Line_Completed</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        </ogc:Filter>
+          <LineSymbolizer><Stroke>
+             <GraphicStroke>
+                 <Graphic>
+                   <Mark>
+                     <WellKnownName>shape://times</WellKnownName>
+                     <Stroke>
+                   <CssParameter name="stroke">#333333</CssParameter>
+                   <CssParameter name="stroke-width">2</CssParameter>
+                     </Stroke>
+                     </Mark><Size>12</Size>
+                   </Graphic>
+           </GraphicStroke>
+           <CssParameter name="stroke-dasharray">8 8</CssParameter>
+      </Stroke>
+      </LineSymbolizer>
+        </Rule>
+    <Rule>
+          <Name>Feature</Name>
+          <Title>Temporary Levee</Title>
+        <ogc:Filter>
+        <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Temporary_Levee</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        </ogc:Filter>
+         <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">10</CssParameter>
+              <CssParameter name="stroke-dasharray">25 3</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke-width">5</CssParameter>
+              <CssParameter name="stroke-dasharray">15 13</CssParameter>
+             </Stroke>
+          </LineSymbolizer>
+        </Rule>
+    <Rule>
+          <Name>Feature</Name>
+          <Title>Aerial Ignition Planned</Title>
+        <ogc:Filter>
+        <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Aerial_Ignition_Planned</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        </ogc:Filter>
+         <LineSymbolizer>
+      <Stroke>
+      <GraphicStroke>
+      <Graphic>
+          <ExternalGraphic>
+          <OnlineResource xlink:type="simple" xlink:href="Aerial_Ignition_Planned.svg" />
+          <Format>image/svg+xml</Format>
+          </ExternalGraphic>
+          <Size>
+          <ogc:Literal>22</ogc:Literal>
+          </Size>
+      </Graphic>
+      </GraphicStroke>
+      </Stroke>
+      </LineSymbolizer>
+      </Rule>
+        <Rule>
+          <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Evacuation_Escape_Route</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#333333</CssParameter>                           
+              <CssParameter name="stroke-width">6</CssParameter>    
+              <CssParameter name="stroke-linecap">round</CssParameter>    
+            </Stroke>
+          </LineSymbolizer>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FFFF33</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>
+              <CssParameter name="stroke-dasharray">5 5</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+          <LineSymbolizer>
+            <Stroke>
+              <GraphicStroke>
+                <Graphic>
+                  <Mark>
+                    <WellKnownName>shape://carrow</WellKnownName>
+                    <Stroke/>
+                  </Mark><Size>45</Size>
+                </Graphic>
+              </GraphicStroke>
+            </Stroke>
+          </LineSymbolizer>
+       </Rule>
+      <Rule>
+          <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Sector_Boundary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+      <LineSymbolizer>
+        <Stroke>
+          <GraphicStroke>
+          <Graphic>
+            <ExternalGraphic>
+              <OnlineResource 
+                xlink:type="simple" 
+                xlink:href="Sector_Boundary.svg" />
+              <Format>image/svg+xml</Format>
+            </ExternalGraphic>
+          <Size>
+          <ogc:Literal>20</ogc:Literal>
+          </Size>
+          </Graphic>
+          </GraphicStroke>
+        </Stroke>
+      </LineSymbolizer>
+      </Rule>
+      <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Control Line Planned</Title>
+        <ogc:Filter>
+        <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Control_Line_Planned</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        </ogc:Filter>
+         <LineSymbolizer>
+        <Stroke>
+        <GraphicStroke>
+                 <Graphic>
+                   <Mark>
+                     <WellKnownName>shape://times</WellKnownName>
+                     <Stroke>
+                   <CssParameter name="stroke">#333333</CssParameter>
+                   <CssParameter name="stroke-width">2</CssParameter>
+                     </Stroke>
+                     </Mark><Size>12</Size>
+                   </Graphic>
+        </GraphicStroke>
+           <CssParameter name="stroke-dasharray">8 12</CssParameter>
+            </Stroke>
+      </LineSymbolizer>
+      <LineSymbolizer>
+                <Stroke>
+                    <CssParameter name="stroke">#333333</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                    <CssParameter name="stroke-dasharray">6 14</CssParameter>
+                    <CssParameter name="stroke-dashoffset">6</CssParameter>
+                </Stroke>
+           </LineSymbolizer>
+      </Rule>
+       <Rule>
+          <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Machine_Cut_Track</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+            <LineSymbolizer>
+                <Stroke>
+                    <GraphicStroke>
+                    <Graphic>
+                        <ExternalGraphic>
+                            <OnlineResource
+                                xlink:type="simple"
+                                xlink:href="Machine_Cut_Track.svg" />
+                            <Format>image/svg+xml</Format>
+                        </ExternalGraphic>
+                      <Size>
+                        <ogc:Literal>32</ogc:Literal>
+                      </Size>
+                    </Graphic>
+                    </GraphicStroke>
+                </Stroke>
+            </LineSymbolizer>
+          </Rule>
+      <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Edge Predicted</Title>
+                <ogc:Filter>
+                <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Edge_Predicted</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FF0000</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>
+              <CssParameter name="dasharray">10 6</CssParameter>   
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Edge Active</Title>
+                <ogc:Filter>
+                <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Edge_Active</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                </ogc:Filter>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FF0000</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>
+              <CssParameter name="dasharray">3 3</CssParameter>   
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Edge Contained</Title>
+                <ogc:Filter>
+                <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Edge_Contained</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                </ogc:Filter>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FF0000</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>    
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Control Line Completed</Title>
+                <ogc:Filter>
+                <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Control_Line_Completed</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                </ogc:Filter>
+          <LineSymbolizer><Stroke>
+             <GraphicStroke>
+                 <Graphic>
+                   <Mark>
+                     <WellKnownName>shape://times</WellKnownName>
+                     <Stroke>
+                   <CssParameter name="stroke">#333333</CssParameter>
+                   <CssParameter name="stroke-width">1</CssParameter>
+                     </Stroke>
+                     </Mark><Size>12</Size>
+                   </Graphic>
+           </GraphicStroke>
+           <CssParameter name="stroke-dasharray">6 10</CssParameter>
+            </Stroke>
+            </LineSymbolizer>
+        </Rule>
+        <Rule>
+          <Name>Feature</Name>
+          <Title>Temporary Levee</Title>
+                <ogc:Filter>
+                <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Temporary_Levee</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                </ogc:Filter>
+                 <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">10</CssParameter>
+              <CssParameter name="stroke-dasharray">25 3</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke-width">5</CssParameter>
+              <CssParameter name="stroke-dasharray">15 13</CssParameter>
+             </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        <Rule>
+          <Name>Feature</Name>
+          <Title>Aerial Ignition Completed</Title>
+                <ogc:Filter>
+                <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Aerial_Ignition_Completed</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                </ogc:Filter>
+                 <LineSymbolizer>
+            <Stroke>
+            <GraphicStroke>
+            <Graphic>
+          <ExternalGraphic>
+          <OnlineResource xlink:type="simple" xlink:href="Aerial_Ignition_Completed.svg" />
+          <Format>image/svg+xml</Format>
+          </ExternalGraphic>
+          <Size>
+          <ogc:Literal>22</ogc:Literal>
+          </Size>
+            </Graphic>
+            </GraphicStroke>
+            </Stroke>
+            </LineSymbolizer>
+            </Rule>
+        <Rule>
+          <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Evacuation_Escape_Route</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#333333</CssParameter>                           
+              <CssParameter name="stroke-width">6</CssParameter>    
+              <CssParameter name="stroke-linecap">round</CssParameter>    
+            </Stroke>
+          </LineSymbolizer>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FFFF33</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>
+              <CssParameter name="stroke-dasharray">5 5</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+          <LineSymbolizer>
+            <Stroke>
+              <GraphicStroke>
+                <Graphic>
+                  <Mark>
+                    <WellKnownName>shape://carrow</WellKnownName>
+                    <Stroke/>
+                  </Mark><Size>45</Size>
+                </Graphic>
+              </GraphicStroke>
+            </Stroke>
+          </LineSymbolizer>
+       </Rule>
+        <Rule>
+          <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Sector_Boundary</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+            <LineSymbolizer>
+                <Stroke>
+                    <GraphicStroke>
+                    <Graphic>
+                        <ExternalGraphic>
+                            <OnlineResource
+                                xlink:type="simple"
+                                xlink:href="Sector_Boundary.svg" />
+                            <Format>image/svg+xml</Format>
+                        </ExternalGraphic>
+                    <Size>
+                    <ogc:Literal>20</ogc:Literal>
+                    </Size>
+                    </Graphic>
+                    </GraphicStroke>
+                </Stroke>
+            </LineSymbolizer>
+          </Rule>
+          <Rule>
+          <Name>Feature</Name>
+          <Title>Fire Control Line Planned</Title>
+                <ogc:Filter>
+                <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Fire_Control_Line_Planned</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                </ogc:Filter>
+                 <LineSymbolizer>
+                <Stroke>
+                <GraphicStroke>
+                 <Graphic>
+                   <Mark>
+                     <WellKnownName>shape://times</WellKnownName>
+                     <Stroke>
+                   <CssParameter name="stroke">#333333</CssParameter>
+                   <CssParameter name="stroke-width">2</CssParameter>
+                     </Stroke>
+                     </Mark><Size>12</Size>
+                   </Graphic>
+                </GraphicStroke>
+           <CssParameter name="stroke-dasharray">8 12</CssParameter>
+            </Stroke>
+            </LineSymbolizer>
+            <LineSymbolizer>
+                <Stroke>
+                    <CssParameter name="stroke">#333333</CssParameter>
+                    <CssParameter name="stroke-width">2</CssParameter>
+                    <CssParameter name="stroke-dasharray">6 14</CssParameter>
+                    <CssParameter name="stroke-dashoffset">6</CssParameter>
+                </Stroke>
+             </LineSymbolizer>
+            </Rule>
+       <Rule>
+          <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Machine_Cut_Track</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+            <LineSymbolizer>
+                <Stroke>
+                    <GraphicStroke>
+                    <Graphic>
+                        <ExternalGraphic>
+                            <OnlineResource
+                                xlink:type="simple"
+                                xlink:href="Machine_Cut_Track.svg" />
+                            <Format>image/svg+xml</Format>
+                        </ExternalGraphic>
+                      <Size>
+                        <ogc:Literal>32</ogc:Literal>
+                      </Size>
+                    </Graphic>
+                    </GraphicStroke>
+                </Stroke>
+            </LineSymbolizer>
+          </Rule>
+        <Rule>
+                <ogc:Filter>
+                  <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>Feature</ogc:PropertyName>
+                    <ogc:Literal>Back_Burn_Planned</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>Orient</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+          </ogc:Filter>
+          <LineSymbolizer>
+      <Stroke>
+        <GraphicStroke>
+        <Graphic>
+          <ExternalGraphic>
+          <OnlineResource
+              xlink:type="simple"
+              xlink:href="Back_Burn_Planned_0.svg" />
+          <Format>image/svg+xml</Format>
+          </ExternalGraphic>
+          <Size>
+          <ogc:Literal>22</ogc:Literal>
+          </Size>
+        </Graphic>
+        </GraphicStroke>
+        </Stroke>
+      </LineSymbolizer>
+        </Rule>
+        <Rule>
+                <ogc:Filter>
+                  <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>Feature</ogc:PropertyName>
+                    <ogc:Literal>Back_Burn_Planned</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>Orient</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+          </ogc:Filter>
+          <LineSymbolizer>
+      <Stroke>
+        <GraphicStroke>
+        <Graphic>
+          <ExternalGraphic>
+          <OnlineResource
+              xlink:type="simple"
+              xlink:href="Back_Burn_Planned_1.svg" />
+          <Format>image/svg+xml</Format>
+          </ExternalGraphic>
+          <Size>
+          <ogc:Literal>22</ogc:Literal>
+          </Size>
+        </Graphic>
+        </GraphicStroke>
+        </Stroke>
+      </LineSymbolizer>
+        </Rule>
+        <Rule>
+                <ogc:Filter>
+                  <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>Feature</ogc:PropertyName>
+                    <ogc:Literal>Back_Burn_Completed</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>Orient</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+          </ogc:Filter>
+          <LineSymbolizer>
+      <Stroke>
+        <GraphicStroke>
+        <Graphic>
+          <ExternalGraphic>
+          <OnlineResource
+              xlink:type="simple"
+              xlink:href="Back_Burn_Completed_0.svg" />
+          <Format>image/svg+xml</Format>
+          </ExternalGraphic>
+          <Size>
+          <ogc:Literal>22</ogc:Literal>
+          </Size>
+        </Graphic>
+        </GraphicStroke>
+        </Stroke>
+      </LineSymbolizer>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>    
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+        <Rule>
+          <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>Feature</ogc:PropertyName>
+                <ogc:Literal>Road_Closed_Line</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+           <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">1.5</CssParameter>
+              <CssParameter name="stroke-dasharray">5 3</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+           <LineSymbolizer>
+    <Stroke>
+        <GraphicStroke>
+        <Graphic>
+          <ExternalGraphic>
+          <OnlineResource xlink:type="simple" xlink:href="Road_Closed_Line.svg" />
+          <Format>image/svg+xml</Format>
+          </ExternalGraphic>
+          <Size>
+          <ogc:Literal>12</ogc:Literal>
+          </Size>
+        </Graphic>
+        </GraphicStroke>
+        <CssParameter name="stroke-dasharray">10 35</CssParameter>
+        </Stroke>
+      </LineSymbolizer>
+         </Rule>
+        <Rule>
+                <ogc:Filter>
+                  <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>Feature</ogc:PropertyName>
+                    <ogc:Literal>Back_Burn_Completed</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>Orient</ogc:PropertyName>
+                    <ogc:Literal>1</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                </ogc:And>
+          </ogc:Filter>
+          <LineSymbolizer>
+      <Stroke>
+        <GraphicStroke>
+        <Graphic>
+          <ExternalGraphic>
+          <OnlineResource
+              xlink:type="simple"
+              xlink:href="Back_Burn_Completed_1.svg" />
+          <Format>image/svg+xml</Format>
+          </ExternalGraphic>
+          <Size>
+          <ogc:Literal>22</ogc:Literal>
+          </Size>
+        </Graphic>
+        </GraphicStroke>
+        </Stroke>
+      </LineSymbolizer>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>    
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+    </FeatureTypeStyle>
+  </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>

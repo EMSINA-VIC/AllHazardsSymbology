@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg3017" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64px" width="64px" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata3022">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer3">
+  <path id="path3859-2" d="m-34.4,25.7a15.8,20.1,0,1,1,-31.6,0,15.8,20.1,0,1,1,31.6,0z" transform="matrix(1.6954023,0,0,1.3212669,117.62383,-1.447139)" fill="#FFF"/>
+ </g>
+ <g id="layer1">
+  <text id="text3013" style="letter-spacing:0px;word-spacing:0px;" font-weight="normal" xml:space="preserve" transform="matrix(1.0012244,0.00498075,0.03212044,0.99893689,0,0)" font-size="15.40528679px" font-style="normal" y="37.393505" x="10.361387" font-family="Sans" line-height="125%" fill="#000000"><tspan id="tspan3015" x="10.361387" y="37.393505">RAFT</tspan></text>
+  <path id="path2999" d="M24.7,59.6c-14.4-4-23.7-18.8-20.7-33.1,3.18-15.3,18.5-25.6,33.5-22.5,15.3,3.17,25.6,18.5,22.5,33.4-3.38,16.3-19.8,26.6-35.4,22.2zm18-6.44c8.37-4.3,12.8-11.6,12.8-21.2-0.007-13.8-9.68-23.4-23.4-23.4-9.56,0-16.8,4.38-21.3,12.9-2.78,5.24-2.93,15.5-0.298,20.5,6.45,12.3,20.5,17.2,32.2,11.2z" fill="#000"/>
+ </g>
+</svg>

@@ -1,0 +1,20 @@
+[
+    {
+        "name": "test",
+        "title" : "This is a test description",
+        "tags": [
+            "test",
+            "disc",
+            "shape",
+            "shapes",
+            "geometric",
+            "stroke",
+            "round"
+        ],
+        "icon": "test",
+        "source": "ahs_2010",
+        "status_colours": "event_status.json",
+        "geometry_type": "point"
+        	
+    }
+]
